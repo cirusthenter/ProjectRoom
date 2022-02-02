@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>予約可能教室</h1>
+<hr>
+<h2>日時・時限</h2>
+<ul>
+    <li>
+        2021/{{ date | date:"m/d（D）"}}
+    </li>
+    <li>
+        {{ period }}限
+    </li>
+</ul>
+{% if today < date %}
+<hr>
+<h2>使用可能機器</h2>
+<ul>
+    <li>これらの教室には対面授業配信用の機器（教卓PC、WEBカメラ）が備わっています</li>
+    <li>教室マイク音声を教卓PCに入力することもできます</li>
+</ul>
+<hr>
+<h2>予約可能教室一覧</h2>
+<ul>
+    {% for unit in units %}
+    {% comment %} <li><a href="{% url 'room:calendar' room.pk %}">{{ room.name }}</a></li> {% endcomment %}
+    <li><a href="{% url 'room:booking' unit.pk month day %}">{{ unit.room.name }}</a>（{{unit.room.capacity}}名）</li>
+    {% empty %}
+    ありません
+    {% endfor %}
+</ul>
+{% endif %}
+<hr>
+<h2>予約済教室一覧</h2>
+<ul>
+    {% for schedule in schedules %}
+    {% if is_admin %}
+    <li style="margin-top: 15px;">
+        <a href="{% url 'room:schedule' schedule.id %}">
+            {{schedule.unit.room.name }}</a>
+        （{{ schedule.unit.room.capacity }}名）
+
+    </li>
+    申請者: <a href="{% url 'room:user_page' schedule.subscriber.id %}">{{ schedule.subscriber.email }}</a><br>
+    氏名: {{ schedule.subscriber.last_name }} {{ schedule.subscriber.first_name }}<br>
+    科目名: {{ schedule.course  }}<br>
+    設置学部: {{ schedule.faculty  }}<br>
+    最大利用者数: {{ schedule.num_students  }}<br>
+    {% else %}
+    <li style="margin-top: 15px;">
+        {{schedule.unit.room.name }}（{{ schedule.unit.room.capacity }}名）
+    </li>
+    {% endif %}
+    {% empty %}
+    ありません
+    {% endfor %}
+</ul>
+<hr>
+<h2>教室情報</h2>
+<ul>
+    <li><a href="https://www.keio.ac.jp/ja/maps/hiyoshi.html">
+            慶應義塾大学日吉キャンパスマップ</a></li>
+    <li><a href="http://www.hc.keio.ac.jp/ja/facilities/schoolhouse/index.html">
+            慶應義塾大学日吉キャンパス授業関連の施設</a></li>
+</ul>
+{% endblock %}

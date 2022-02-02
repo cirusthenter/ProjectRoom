@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>カレンダー</h1>
+<p>{{ start_day }} - {{ end_day }}</p>
+<table class="table table-bordered text-center" style="table-layout: fixed; width: 100%;" border="1">
+    <tr>
+        <td><a href="{% url 'room:calendar'  before.month before.day %}">前週</a></td>
+        {% for day in days %}
+        <th>
+            {% if day.weekday == 5 %}
+            <a href="{% url 'room:day' day.month day.day %}" style="color: blue;">
+                {{ day | date:"d(D)" }}
+            </a>
+            {% elif day.weekday == 6 %}
+            <a href="{% url 'room:day' day.month day.day %}" style="color: red;">
+                {{ day | date:"d(D)" }}
+            </a>
+            {% else %}
+            <a href="{% url 'room:day' day.month day.day %}" style="color: black;">
+                {{ day | date:"d(D)" }}
+            </a>
+            {% endif %}
+        </th>
+        {% endfor %}
+        <td><a href="{% url 'room:calendar'  next.month next.day %}">次週</a></td>
+    </tr>
+
+    {% for period, schedules in calendar.items %}
+    <tr>
+        <td>
+            {{ period }}時限
+        </td>
+        {% for dt, nums in schedules.items %}
+        <td>
+            {% if nums.0 > 0 %}
+                <div class="cell available">
+            {% else %}
+                <div class="cell unavailable-border">
+            {% endif %}
+            {% if nums.2 %}
+                {% if is_admin %}
+                予約不可<br>
+                <a href="{% url 'room:room' dt.month dt.day period %}">予約済: {{ nums.1 }}</a>
+                {% else %}
+                予約不可<br>
+                予約済: -
+                {% endif %}
+            {% elif dt < today  %}
+                {% if is_admin %}
+                予約締切<br>
+                <a href="{% url 'room:room' dt.month dt.day period %}">
+                予約済: {{ nums.1 }}
+                </a>
+                {% else %}
+                予約締切<br>
+                予約済: -
+                {% endif %}
+            {% elif dt == today %}
+                <span style="color: red;">予約締切</span>
+                <br>
+                {% if is_admin %}
+                <a href="{% url 'room:room' dt.month dt.day period %}">予約済: {{ nums.1 }}</a>
+                {% else %}
+                予約済: {{ nums.1 }}
+                {% endif %}
+            {% else %}
+                <a href="{% url 'room:room' dt.month dt.day period %}">予約可: {{ nums.0 }}
+                    <br>
+                    予約済: {{ nums.1 }}
+                </a>
+            {% endif %}
+            </div>
+        </td>
+
+        {% endfor %}
+        <td>
+            {{ period }}時限
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}

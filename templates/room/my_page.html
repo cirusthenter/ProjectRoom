@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>予約の確認・編集</h1>
+<hr>
+<h2>直近の予約</h2>
+<ul>
+    {% for schedule in schedule_list %}
+    <li><a href="{% url 'room:schedule' schedule.pk %}">
+            {{ schedule.date|date:"m/d" }}
+            {{ schedule.unit.period }}限
+            {{ schedule.unit.room }}教室
+            ({{ schedule.num_students }}人)
+        </a></li>
+    {% empty %}
+    予約はありません
+    {% endfor %}
+</ul>
+<hr>
+<h2>過去の予約</h2>
+<ul>
+    {% for schedule in past_schedule_list %}
+    <li><a href="{% url 'room:schedule' schedule.pk %}">
+            {{ schedule.date|date:"m/d" }}
+            {{ schedule.unit.period }}限
+            {{ schedule.unit.room }}教室
+        </a></li>
+    {% empty %}
+    予約はありません
+    {% endfor %}
+</ul>
+{% endblock %}

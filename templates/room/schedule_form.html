@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>予約確認</h1>
+<hr>
+<h2>基本情報</h2>
+<ul>
+    <li>{{ unit.room }}教室 </li>
+    <li>2021/{{ date | date:"m/d（D）" }}
+    <li>{{ unit.period }}限 </li>
+    <li>収容人数: {{ unit.room.capacity }}名</li>
+</ul>
+<hr>
+<h2>予約情報の確認</h2>
+<ul>
+    <li>科目名: {{ schedule.course  }}<br></li>
+    <li>設置学部: {{faculty}}<br></li>
+    <li>最大利用者数: {{ num_students }}<br></li>
+</ul>
+<hr>
+{% if can_edit %}
+{% if schedule.subscriber == user %}
+<h2>予約情報の編集</h2>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+
+    <button type="submit" class="btn btn-black">更新</button>
+</form>
+<hr>
+<h2>予約の取り消し</h2>
+<form action="{% url 'room:schedule_delete' schedule.pk %}" method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-black" onclick="return confirm('予約を取り消します');">削除</button>
+</form>
+{% else %}
+<h2>予約の編集・取り消し</h2>
+他者の予約の編集・取り消しはできません
+{% endif %}
+{% else %}
+<h2>予約の編集・取り消し</h2>
+当日以降の編集・取り消しはできません
+{% endif %}
+{% endblock %}

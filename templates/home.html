@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+
+{% block content %}
+<h1>2021年度春学期　日吉キャンパス空き教室予約サイト</h1>
+{% if user.is_authenticated %}
+<hr>
+<div class="button--wrapper">
+    <a href="{% url 'room:calendar' %}"><button class="btn btn-outline-black top-btn">カレンダーへ</button></a>
+</div>
+
+{% else %}
+<p class="notice-text">以下の注意事項を必ずお読みの上ご利用ください。</p>
+{% endif %}
+<hr>
+<h2>注意事項</h2>
+<ol>
+    <li> 利用は昨年度履修人数が100人を超えたため今年度オンライン授業となった慶應義塾大学日吉設置科目担当の教員に限られます。</li>
+    <li> 担当科目の設置曜日・時限と同じ時間帯のみ予約可能です。</li>
+    <li> 春学期は一人（1つのkeio.jp ID）予約は2回までとします。</li>
+    <li> コロナ対応定員を超える人数での教室利用はできません。</li>
+    <li> 予約をキャンセルする場合は予約当日の真夜中0:00までにお願いします。</li>
+    <li> 予約した教室で対面授業を実施する場合、学生へは1週間以上の余裕をもって授業支援、Canvas等を通じ科目担当者から直接周知してください。</li>
+    <li> 空き教室を使っての対面授業が受講困難な学生にも不利にならないよう、ご配慮をお願いします。</li>
+</ol>
+
+{% if user.is_authenticated is False %}
+<hr>
+<b>
+    <p>以上の注意事項について<br>
+        Click the button below to indicate that you accept the above conditions:</p>
+</b>
+<div class="button--wrapper">
+    <a href="{% provider_login_url 'google' %}">
+        <button class="btn btn-outline-black top-btn">
+            同意して keio.jp でサインイン<br>
+            Sign in to continue with keio.jp
+        </button>
+    </a>
+</div>
+{% endif %}
+{% endblock content %}

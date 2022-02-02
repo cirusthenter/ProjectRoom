@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>ユーザ情報</h1>
+<hr>
+<h2>基本情報</h2>
+<ul>
+    <li>email: {{ theuser.email }}</li>
+    <li>氏名: {{ theuser.last_name }} {{ theuser.first_name }}<br></li>
+</ul>
+<hr>
+<h2>直近の予約</h2>
+<ul>
+    {% for schedule in schedule_list %}
+    <li>
+        {{ schedule.date|date:"m/d" }}
+        {{ schedule.unit.period }}限
+        {{ schedule.unit.room }}教室<br>
+        科目名: {{ schedule.course  }}<br>
+        設置学部: {{ schedule.faculty  }}<br>
+        最大利用者数: {{ schedule.num_students  }}<br>
+    </li>
+    {% empty %}
+    予約はありません
+    {% endfor %}
+</ul>
+<hr>
+<h2>過去の予約</h2>
+<ul>
+    {% for schedule in past_schedule_list %}
+    <li><a href="{% url 'room:schedule' schedule.pk %}">
+            {{ schedule.date|date:"m/d" }}
+            {{ schedule.unit.period }}限
+            {{ schedule.unit.room }}教室
+        </a></li>
+    {% empty %}
+    予約はありません
+    {% endfor %}
+</ul>
+<hr>
+<h2>ログ（{{ num_logs }}件）</h2>
+<ul>
+    {% for schedule in log_list %}
+    <li>
+        {{ schedule.type }}
+        {{ schedule.created_at }}
+    </li>
+    日付: {{ schedule.date|date:"m/d" }}<br>
+    時限: {{ schedule.unit.period }}限<br>
+    教室: {{ schedule.unit.room }}<br>
+    設置学部: {{ schedule.faculty }}<br>
+    科目名: {{ schedule.course }}<br>
+    最大利用者数: {{ schedule.num_students }}
+    {% empty %}
+    <li>予約はありません。</li>
+    {% endfor %}
+</ul>
+{% endblock %}

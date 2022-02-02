@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<h1>教室予約</h1>
+<hr>
+<h2>基本情報</h2>
+<ul>
+    <li>{{ unit.room }}教室 </li>
+    <li>2021/{{ date | date:"m/d（D）" }}
+    <li>{{ unit.period }}限 </li>
+    <li>収容人数: {{ unit.room.capacity }}名</li>
+</ul>
+<hr>
+<h2>使用可能機器</h2>
+<ul>
+    <li>対面授業配信用の機器（教卓PC、WEBカメラ）</li>
+    <li>教室マイク音声を教卓PCに入力可</li>
+</ul>
+<hr>
+<h2>予約登録</h2>
+{% if can_book %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-black" onclick="return confirm('この内容で予約します');">予約</button>
+</form>
+{% else %}
+{{ message }}
+{% endif %}
+{% endblock %}

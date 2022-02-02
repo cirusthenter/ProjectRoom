@@ -1,0 +1,1684 @@
+[{
+        "model": "room.unit",
+        "pk": 0,
+        "fields": {
+            "room": 0,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 1,
+        "fields": {
+            "room": 0,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 2,
+        "fields": {
+            "room": 0,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 3,
+        "fields": {
+            "room": 0,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 4,
+        "fields": {
+            "room": 0,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 5,
+        "fields": {
+            "room": 0,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 6,
+        "fields": {
+            "room": 0,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 7,
+        "fields": {
+            "room": 0,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 8,
+        "fields": {
+            "room": 0,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 9,
+        "fields": {
+            "room": 1,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 10,
+        "fields": {
+            "room": 1,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 11,
+        "fields": {
+            "room": 1,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 12,
+        "fields": {
+            "room": 1,
+            "weekday": 1,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 13,
+        "fields": {
+            "room": 1,
+            "weekday": 1,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 14,
+        "fields": {
+            "room": 1,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 15,
+        "fields": {
+            "room": 1,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 16,
+        "fields": {
+            "room": 1,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 17,
+        "fields": {
+            "room": 1,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 18,
+        "fields": {
+            "room": 1,
+            "weekday": 3,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 19,
+        "fields": {
+            "room": 1,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 20,
+        "fields": {
+            "room": 1,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 21,
+        "fields": {
+            "room": 1,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 22,
+        "fields": {
+            "room": 1,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 23,
+        "fields": {
+            "room": 1,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 24,
+        "fields": {
+            "room": 2,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 25,
+        "fields": {
+            "room": 2,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 26,
+        "fields": {
+            "room": 2,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 27,
+        "fields": {
+            "room": 2,
+            "weekday": 2,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 28,
+        "fields": {
+            "room": 2,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 29,
+        "fields": {
+            "room": 2,
+            "weekday": 2,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 30,
+        "fields": {
+            "room": 2,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 31,
+        "fields": {
+            "room": 2,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 32,
+        "fields": {
+            "room": 2,
+            "weekday": 3,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 33,
+        "fields": {
+            "room": 2,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 34,
+        "fields": {
+            "room": 2,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 35,
+        "fields": {
+            "room": 2,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 36,
+        "fields": {
+            "room": 2,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 37,
+        "fields": {
+            "room": 2,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 38,
+        "fields": {
+            "room": 3,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 39,
+        "fields": {
+            "room": 3,
+            "weekday": 0,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 40,
+        "fields": {
+            "room": 3,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 41,
+        "fields": {
+            "room": 3,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 42,
+        "fields": {
+            "room": 3,
+            "weekday": 1,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 43,
+        "fields": {
+            "room": 3,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 44,
+        "fields": {
+            "room": 3,
+            "weekday": 1,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 45,
+        "fields": {
+            "room": 3,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 46,
+        "fields": {
+            "room": 3,
+            "weekday": 2,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 47,
+        "fields": {
+            "room": 3,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 48,
+        "fields": {
+            "room": 3,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 49,
+        "fields": {
+            "room": 3,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 50,
+        "fields": {
+            "room": 3,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 51,
+        "fields": {
+            "room": 3,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 52,
+        "fields": {
+            "room": 3,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 53,
+        "fields": {
+            "room": 3,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 54,
+        "fields": {
+            "room": 3,
+            "weekday": 4,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 55,
+        "fields": {
+            "room": 3,
+            "weekday": 4,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 56,
+        "fields": {
+            "room": 3,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 57,
+        "fields": {
+            "room": 3,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 58,
+        "fields": {
+            "room": 3,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 59,
+        "fields": {
+            "room": 3,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 60,
+        "fields": {
+            "room": 4,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 61,
+        "fields": {
+            "room": 4,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 62,
+        "fields": {
+            "room": 4,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 63,
+        "fields": {
+            "room": 4,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 64,
+        "fields": {
+            "room": 4,
+            "weekday": 1,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 65,
+        "fields": {
+            "room": 4,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 66,
+        "fields": {
+            "room": 4,
+            "weekday": 1,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 67,
+        "fields": {
+            "room": 4,
+            "weekday": 1,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 68,
+        "fields": {
+            "room": 4,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 69,
+        "fields": {
+            "room": 4,
+            "weekday": 2,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 70,
+        "fields": {
+            "room": 4,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 71,
+        "fields": {
+            "room": 4,
+            "weekday": 2,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 72,
+        "fields": {
+            "room": 4,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 73,
+        "fields": {
+            "room": 4,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 74,
+        "fields": {
+            "room": 4,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 75,
+        "fields": {
+            "room": 4,
+            "weekday": 3,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 76,
+        "fields": {
+            "room": 4,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 77,
+        "fields": {
+            "room": 4,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 78,
+        "fields": {
+            "room": 4,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 79,
+        "fields": {
+            "room": 4,
+            "weekday": 4,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 80,
+        "fields": {
+            "room": 4,
+            "weekday": 4,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 81,
+        "fields": {
+            "room": 4,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 82,
+        "fields": {
+            "room": 4,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 83,
+        "fields": {
+            "room": 4,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 84,
+        "fields": {
+            "room": 4,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 85,
+        "fields": {
+            "room": 5,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 86,
+        "fields": {
+            "room": 5,
+            "weekday": 0,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 87,
+        "fields": {
+            "room": 5,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 88,
+        "fields": {
+            "room": 5,
+            "weekday": 0,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 89,
+        "fields": {
+            "room": 5,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 90,
+        "fields": {
+            "room": 5,
+            "weekday": 1,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 91,
+        "fields": {
+            "room": 5,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 92,
+        "fields": {
+            "room": 5,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 93,
+        "fields": {
+            "room": 5,
+            "weekday": 2,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 94,
+        "fields": {
+            "room": 5,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 95,
+        "fields": {
+            "room": 5,
+            "weekday": 2,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 96,
+        "fields": {
+            "room": 5,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 97,
+        "fields": {
+            "room": 5,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 98,
+        "fields": {
+            "room": 5,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 99,
+        "fields": {
+            "room": 5,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 100,
+        "fields": {
+            "room": 5,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 101,
+        "fields": {
+            "room": 5,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 102,
+        "fields": {
+            "room": 5,
+            "weekday": 4,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 103,
+        "fields": {
+            "room": 5,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 104,
+        "fields": {
+            "room": 5,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 105,
+        "fields": {
+            "room": 5,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 106,
+        "fields": {
+            "room": 5,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 107,
+        "fields": {
+            "room": 6,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 108,
+        "fields": {
+            "room": 6,
+            "weekday": 0,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 109,
+        "fields": {
+            "room": 6,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 110,
+        "fields": {
+            "room": 6,
+            "weekday": 0,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 111,
+        "fields": {
+            "room": 6,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 112,
+        "fields": {
+            "room": 6,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 113,
+        "fields": {
+            "room": 6,
+            "weekday": 1,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 114,
+        "fields": {
+            "room": 6,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 115,
+        "fields": {
+            "room": 6,
+            "weekday": 1,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 116,
+        "fields": {
+            "room": 6,
+            "weekday": 1,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 117,
+        "fields": {
+            "room": 6,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 118,
+        "fields": {
+            "room": 6,
+            "weekday": 2,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 119,
+        "fields": {
+            "room": 6,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 120,
+        "fields": {
+            "room": 6,
+            "weekday": 2,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 121,
+        "fields": {
+            "room": 6,
+            "weekday": 2,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 122,
+        "fields": {
+            "room": 6,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 123,
+        "fields": {
+            "room": 6,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 124,
+        "fields": {
+            "room": 6,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 125,
+        "fields": {
+            "room": 6,
+            "weekday": 3,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 126,
+        "fields": {
+            "room": 6,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 127,
+        "fields": {
+            "room": 6,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 128,
+        "fields": {
+            "room": 6,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 129,
+        "fields": {
+            "room": 6,
+            "weekday": 4,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 130,
+        "fields": {
+            "room": 6,
+            "weekday": 4,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 131,
+        "fields": {
+            "room": 6,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 132,
+        "fields": {
+            "room": 6,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 133,
+        "fields": {
+            "room": 6,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 134,
+        "fields": {
+            "room": 6,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 135,
+        "fields": {
+            "room": 7,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 136,
+        "fields": {
+            "room": 7,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 137,
+        "fields": {
+            "room": 7,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 138,
+        "fields": {
+            "room": 7,
+            "weekday": 1,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 139,
+        "fields": {
+            "room": 7,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 140,
+        "fields": {
+            "room": 7,
+            "weekday": 2,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 141,
+        "fields": {
+            "room": 7,
+            "weekday": 2,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 142,
+        "fields": {
+            "room": 7,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 143,
+        "fields": {
+            "room": 7,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 144,
+        "fields": {
+            "room": 7,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 145,
+        "fields": {
+            "room": 7,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 146,
+        "fields": {
+            "room": 7,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 147,
+        "fields": {
+            "room": 7,
+            "weekday": 4,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 148,
+        "fields": {
+            "room": 7,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 149,
+        "fields": {
+            "room": 7,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 150,
+        "fields": {
+            "room": 8,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 151,
+        "fields": {
+            "room": 8,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 152,
+        "fields": {
+            "room": 8,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 153,
+        "fields": {
+            "room": 8,
+            "weekday": 1,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 154,
+        "fields": {
+            "room": 8,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 155,
+        "fields": {
+            "room": 8,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 156,
+        "fields": {
+            "room": 8,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 157,
+        "fields": {
+            "room": 8,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 158,
+        "fields": {
+            "room": 8,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 159,
+        "fields": {
+            "room": 8,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 160,
+        "fields": {
+            "room": 8,
+            "weekday": 5,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 161,
+        "fields": {
+            "room": 9,
+            "weekday": 0,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 162,
+        "fields": {
+            "room": 9,
+            "weekday": 0,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 163,
+        "fields": {
+            "room": 9,
+            "weekday": 0,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 164,
+        "fields": {
+            "room": 9,
+            "weekday": 0,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 165,
+        "fields": {
+            "room": 9,
+            "weekday": 0,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 166,
+        "fields": {
+            "room": 9,
+            "weekday": 1,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 167,
+        "fields": {
+            "room": 9,
+            "weekday": 1,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 168,
+        "fields": {
+            "room": 9,
+            "weekday": 1,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 169,
+        "fields": {
+            "room": 9,
+            "weekday": 2,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 170,
+        "fields": {
+            "room": 9,
+            "weekday": 2,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 171,
+        "fields": {
+            "room": 9,
+            "weekday": 2,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 172,
+        "fields": {
+            "room": 9,
+            "weekday": 2,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 173,
+        "fields": {
+            "room": 9,
+            "weekday": 2,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 174,
+        "fields": {
+            "room": 9,
+            "weekday": 3,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 175,
+        "fields": {
+            "room": 9,
+            "weekday": 3,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 176,
+        "fields": {
+            "room": 9,
+            "weekday": 3,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 177,
+        "fields": {
+            "room": 9,
+            "weekday": 3,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 178,
+        "fields": {
+            "room": 9,
+            "weekday": 3,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 179,
+        "fields": {
+            "room": 9,
+            "weekday": 4,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 180,
+        "fields": {
+            "room": 9,
+            "weekday": 4,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 181,
+        "fields": {
+            "room": 9,
+            "weekday": 4,
+            "period": 3
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 182,
+        "fields": {
+            "room": 9,
+            "weekday": 4,
+            "period": 4
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 183,
+        "fields": {
+            "room": 9,
+            "weekday": 4,
+            "period": 5
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 184,
+        "fields": {
+            "room": 9,
+            "weekday": 5,
+            "period": 1
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 185,
+        "fields": {
+            "room": 9,
+            "weekday": 5,
+            "period": 2
+        }
+    },
+    {
+        "model": "room.unit",
+        "pk": 186,
+        "fields": {
+            "room": 9,
+            "weekday": 5,
+            "period": 3
+        }
+    }
+]

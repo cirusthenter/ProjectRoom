@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>管理者ページ</h1>
+<hr>
+<h2>基本情報</h2>
+<ul>
+    <li>ユーザ数: {{ num_users }}</li>
+    <li>今後の予約総数: {{ num_schedules }}</li>
+    <li>過去の予約総数: {{ num_past_schedules }}</li>
+    <li>ログ総数: {{ num_logs }}</li>
+</ul>
+<hr>
+<h2>ユーザ一覧</h2>
+<ul>
+    {% for user in users %}
+    <li><a href="{% url 'room:user_page' user.0.id %}">{{ user.0.email }}</a></li>
+    氏名: {{ user.0.last_name }} {{ user.0.first_name }}<br>
+    直近の予約: {{ user.1 }}<br>
+    過去の予約: {{ user.2 }}<br>
+    ログ: {{ user.3 }}
+    {% empty %}
+    ありません
+    {% endfor %}
+</ul>
+{% endblock %}

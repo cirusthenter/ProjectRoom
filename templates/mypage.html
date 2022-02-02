@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>予約一覧</h1>
+<ul>
+    {% for unit in object_list %}
+    <li><a href="{% url 'room:reserve' unit.pk %}">{{ unit.day.room }}教室 {{ unit.day.date|date:"m/d" }}
+            {{ unit.period }}時限</a></li>
+    {% empty %}
+    <p>予約はありません</p>
+    {% endfor %}
+</ul>
+{% endblock content %}

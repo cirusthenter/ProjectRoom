@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>予約状況確認</h1>
+<p>2021/{{ date | date:"m/d（D）" }}</p>
+<table class="table table-bordered text-center" style="table-layout: fixed;width: 100%" border="1">
+    <tr>
+        <th></th>
+        <th>1限</th>
+        <th>2限</th>
+        <th>3限</th>
+        <th>4限</th>
+        <th>5限</th>
+    </tr>
+
+    {% for room, room_periods in rooms.items %}
+    <tr>
+        <td>
+            {{ room }}
+        </td>
+        {% for unit in room_periods %}
+        {% if unit %}
+        {% if unit in schedules_set %}
+        {% with schedule=unit%}
+        <td>
+            <div class="cell unavailable">
+                {% if is_admin %}
+                <a href="{% url 'room:schedule' schedule.id %}" style="color: white;">
+                    [{{ schedule.faculty.0 }}] {{ schedule.subscriber.last_name }}<br>
+                    {{ schedule.num_students }}名
+                </a>
+                {% else %}
+                    {% if schedule.subscriber == user %}
+                        <a href="{% url 'room:schedule' schedule.id %}" style="color: white;">
+                            予約済<br>
+                            {{ schedule.num_students }}名
+                        </a>
+                    {% else %}
+                            予約済<br>
+                            {{ schedule.num_students }}名
+                    {% endif %}
+                {% endif %}
+            </div>
+        </td>
+        {% endwith %}
+        {% else %}
+        <td>
+            <div class="cell available">
+                {% if is_available %}
+                <a href="{% url 'room:booking' unit.pk date.month date.day %}">
+                    予約可<br>
+                    {{ unit.room.capacity }}名
+                </a>
+                {% else %}
+                空<br>
+                {{ unit.room.capacity }}名
+
+                {% endif %}
+            </div>
+        </td>
+        {% endif %}
+        {% else %}
+        <td>
+            -
+        </td>
+        {% endif %}
+
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}

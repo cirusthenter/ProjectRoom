@@ -1,0 +1,81 @@
+[{
+    "model": "room.room",
+    "pk": 0,
+    "fields": {
+      "name": "教室1",
+      "capacity": 112
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 1,
+    "fields": {
+      "name": "教室2",
+      "capacity": 112
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 2,
+    "fields": {
+      "name": "教室3",
+      "capacity": 112
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 3,
+    "fields": {
+      "name": "教室4",
+      "capacity": 112
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 4,
+    "fields": {
+      "name": "教室5",
+      "capacity": 152
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 5,
+    "fields": {
+      "name": "教室6",
+      "capacity": 152
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 6,
+    "fields": {
+      "name": "教室7",
+      "capacity": 226
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 7,
+    "fields": {
+      "name": "教室8",
+      "capacity": 128
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 8,
+    "fields": {
+      "name": "教室9",
+      "capacity": 128
+    }
+  },
+  {
+    "model": "room.room",
+    "pk": 9,
+    "fields": {
+      "name": "教室10",
+      "capacity": 149
+    }
+  }
+]
